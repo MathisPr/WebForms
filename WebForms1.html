@@ -28,34 +28,58 @@
 
     <!-- Scripts -->
         <!-- JS Script with async attribute -->
-        <script src="BookListES6.js" async></script>
+        <script src="XXX.js" async></script>
 
 </head>
 <body>
     <div class="container">
         
         
-        <h1>Add Book</h1>
+        <h1>Webformular Test</h1>
 
         <!-- Book Form -->
-        <form id="book-form">
+        <form id="webform">
             
-            <!-- Title -->
+            <!-- Name -->
             <div>
-                <label for="title">Title</label>
-                <input type="text" id="UItitle" class="u-full-width">
+                <label for="Nachname">Nachname</label>
+                <input type="text" id="UI_Nachname" class="u-full-width" required>
             </div>
                         
-            <!-- Author -->
+            <!-- Vorname -->
             <div>
-                <label for="author">Author</label>
-                <input type="text" id="UIauthor" class="u-full-width">
+                <label for="Vorname">Vorname</label>
+                <input type="text" id="UI_Vorname" class="u-full-width" required>
             </div>
                         
-            <!-- ISBN -->
+            <!-- Geburtsdatum -->
             <div>
-                <label for="ISBN">ISBN</label>
-                <input type="text" id="UIISBN" class="u-full-width">
+                <label for="Geburtsdatum">Geburtsdatum</label>
+                <input type="date" id="UI_Geb" class="u-full-width">
+            </div>
+
+            <!-- Straße -->
+            <div>
+                <label for="Straße">Straße</label>
+                <input type="text" id="UI_Strasse" class="u-full-width">
+            </div>
+
+            <!-- Hausnummer -->
+            <div>
+                <label for="Hausnummer">Hausnummer</label>
+                <input type="number" id="UI_Hausnummer" maxlength="7" class="u-full-width">
+            </div>
+
+            <!-- PLZ -->
+            <div>
+                <label for="PLZ">Postleitzahl</label>
+                <input type="text" id="UI_PLZ" class="u-full-width" pattern="[0-9]{5}" required>
+            </div>
+
+            <!-- email -->
+            <div>
+                <label for="Email">Emailadresse</label>
+                <input type="email" id="UI_Email" class="u-full-width">
             </div>
 
             <!-- Input Button -->
@@ -65,20 +89,6 @@
 
         </form>
 
-        <table class="u-full-width">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>ISBN</th>
-                    <th><!-- Delete Icon --></th>
-                </tr>
-            </thead>
-            <tbody id="book-list">
-                <!-- filled by JS Script --> 
-            </tbody>
-
-        </table>
 
         <hr>
 
